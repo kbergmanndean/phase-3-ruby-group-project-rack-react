@@ -22,7 +22,6 @@ Recipes=[
 { name:"Pad See Ew",
     country:"Thailand",
     url: "https://inquiringchef.com/pad-see-ew/",
-    ingredients:
     instructions:"Combine chicken with 1 Tbsp light Thai soy sauce and garlic. Marinate for at least 20 minutes and up to 1 day.
     Whisk together sweet dark soy sauce, light soy sauce, and sugar. Set aside.
     Heat a wok over medium-high heat. When wok is hot, add in chicken and marinade. (The marinade will simmer and “cook” with the chicken, so don’t worry about anything raw remaining.) Bring to a simmer and cook, stirring frequently, until most of the marinade has cooked off and chicken is about halfway cooked.
@@ -35,7 +34,6 @@ Recipes=[
  { name:"Jollof",
     country:"Nigeria",
     url:"https://food52.com/recipes/61557-classic-nigerian-jollof-rice",
- ingredients:
  instructions:"In a blender, combine tomatoes, red poblano (or bell) peppers, chopped onions, and Scotch bonnets with 2 cups of stock, blend till smooth, about a minute or two. You should have roughly 6 cups of blended mix. Pour into a large pot/ pan and bring to the boil then turn down and let simmer, covered for 10 - 12 minutes
  In a large pan, heat oil and add the sliced onions. Season with a pinch of salt, stir-fry for 2 to 3 minutes, then add the bay leaves, curry powder and dried thyme and a pinch of black pepper for 3 - 4 minutes on medium heat. Then add the tomato paste - stir for another 2 minutes. Add the reduced tomato-pepper-Scotch bonnet mixture, stir, and set on medium heat for 10 to 12 minutes till reduced by half, with the lid on. This is the stew that will define the pot.
  Add 4 cups of the stock to the cooked tomato sauce and bring it to boil for 1 - 2 minutes.
@@ -48,7 +46,6 @@ Recipes=[
      name:"Curry Mutton",
     country: "Jamaica",
     url:"https://gracefoods.com/recipe-a-z/recipe/5200-curried-goat",
-    ingredients:
     instructions:"Trim meat, cut into bite-size pieces and wash in a mixture of water and vinegar.
     Add 1 tablespoon curry powder, chopped onion, escallion, garlic, ginger, thyme, scotch bonnet pepper, black pepper and salt; rub the seasonings into the meat, cover and put to marinate for two hours.
     Heat vegetable oil in a heavy bottom skillet over medium heat and add the remaining one tablespoon curry powder. Add the marinated meat and allow to sear. Turn the meat and add 4 cups boiling water. Cover and allow to simmer for about 1 hour 20 minutes or until the meat is tender.
@@ -58,7 +55,6 @@ Recipes=[
 { name:"Spaghetti Carbonara",
     country: "Italy",
     url:"https://cooking.nytimes.com/recipes/12965-spaghetti-carbonara",
-    ingredients:
     instructions:"Place a large pot of lightly salted water (no more than 1 tablespoon salt) over high heat, and bring to a boil. Fill a large bowl with hot water for serving, and set aside.
     In a mixing bowl, whisk together the eggs, yolks and pecorino and Parmesan. Season with a pinch of salt and generous black pepper.
     Set the water to boil. Meanwhile, heat oil in a large skillet over medium heat, add the pork, and sauté until the fat just renders, on the edge of crispness but not hard. Remove from heat and set aside.
@@ -66,3 +62,6 @@ Recipes=[
     Empty serving bowl of hot water. Dry it and add hot pasta mixture. Stir in cheese mixture, adding some reserved pasta water if needed for creaminess. Serve immediately, dressing it with a bit of additional grated pecorino and pepper."
      }
     ]
+    recipe = Recipes.map{|attributes| Recipe.create(attributes)}
+
+Pry.start
